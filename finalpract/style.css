@@ -1,0 +1,141 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #fff;
+    margin: 0 0 5px 0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #252526;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #3c3c3c;
+    height: fit-content;
+}
+
+.feed {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.news-card {
+    background-color: #2d2d2d;
+    border: 1px solid #3e3e3e;
+    padding: 15px;
+    border-radius: 4px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.news-card:hover {
+    transform: scale(1.01);
+    border-color: #4e9a06;
+}
+
+.news-title {
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+    color: #fff;
+}
+
+.news-category {
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.cat-military { background-color: #4b5320; color: #fff; }
+.cat-economy { background-color: #2a4d69; color: #fff; }
+.cat-cats { background-color: #b3c100; color: #333; }
+
+.actions {
+    margin-top: 15px;
+}
+
+button {
+    background-color: #3c3c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 5px;
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: #4e9a06;
+}
+
+.btn-dislike:hover {
+    background-color: #a40000;
+}
+
+.btn-break {
+    background-color: #ce5c00;
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.btn-break:hover {
+    background-color: #e07216;
+}
+
+.stat-group {
+    margin-bottom: 12px;
+}
+
+.stat-bar {
+    background-color: #333;
+    height: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.stat-fill {
+    height: 100%;
+    width: 33.3%;
+    transition: width 0.4s ease-out;
+}
+
+.military-bar { background-color: #4b5320; }
+.economy-bar { background-color: #2a4d69; }
+.cats-bar { background-color: #b3c100; }
+
+hr {
+    border: 0;
+    border-top: 1px dashed #3c3c3c;
+    margin: 15px 0;
+}
+
+.hint {
+    font-size: 0.8rem;
+    color: #888;
+    text-align: center;
+    margin-top: 5px;
+}

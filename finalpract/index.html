@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Симулятор Информационного Пузыря</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>СИМУЛЯТОР ИНФО-ПУЗЫРЯ</h1>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>цифровой след</h3>
+        
+        <div class="stat-group">
+            <label>Милитари / Снаряжение:</label>
+            <div class="stat-bar">
+                <div id="weight-military" class="stat-fill military-bar"></div>
+            </div>
+        </div>
+
+        <div class="stat-group">
+            <label>Экономика / Финансы:</label>
+            <div class="stat-bar">
+                <div id="weight-economy" class="stat-fill economy-bar"></div>
+            </div>
+        </div>
+
+        <div class="stat-group">
+            <label>Котики / Развлечения:</label>
+            <div class="stat-bar">
+                <div id="weight-cats" class="stat-fill cats-bar"></div>
+            </div>
+        </div>
+
+        <hr>
+
+        <button class="btn-break" onclick="breakTheBubble()">СЛОМАТЬ ПУЗЫРЬ</button>
+        
+    </aside>
+
+    <main class="feed" id="news-feed">
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
